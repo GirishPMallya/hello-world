@@ -27,7 +27,6 @@ case myCase
 #	system "cd #{ARGV[1]}"
 	system "git branch #{ARGV[2]}"
 	system "git checkout #{ARGV[2]}"
-	`ruby ../sidescript.rb`
 	
 
 	
