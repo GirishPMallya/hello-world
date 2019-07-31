@@ -1,0 +1,5 @@
+# Logfile created on 2019-07-30 17:05:32 +0530 by logger.rb/66358
+D, [2019-07-30T17:05:32.135946 #15215] DEBUG -- : Request Called
+D, [2019-07-30T17:06:59.820676 #15276] DEBUG -- : Request Called
+D, [2019-07-30T17:14:23.307567 #15682] DEBUG -- : Request Called
+D, [2019-07-30T17:14:23.308446 #15682] DEBUG -- : <MYGIT> <mygit_request>module : Check if git exists? : true
