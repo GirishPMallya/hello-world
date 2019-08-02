@@ -1,5 +1,417 @@
-# Logfile created on 2019-07-30 17:05:32 +0530 by logger.rb/66358
-D, [2019-07-30T17:05:32.135946 #15215] DEBUG -- : Request Called
-D, [2019-07-30T17:06:59.820676 #15276] DEBUG -- : Request Called
-D, [2019-07-30T17:14:23.307567 #15682] DEBUG -- : Request Called
-D, [2019-07-30T17:14:23.308446 #15682] DEBUG -- : <MYGIT> <mygit_request>module : Check if git exists? : true
+# Logfile created on 2019-08-01 12:32:24 +0530 by logger.rb/66358
+D, [2019-08-01T12:32:24.301951 #6655] DEBUG -- : <MyGit> <mygit_create> : mygit_create called with repo: https://github.com/GirishPMallya/hello-world.git and branch: trial_branch
+D, [2019-08-01T12:33:42.738997 #6685] DEBUG -- : <MyGit> <mygit_create> : mygit_create called with repo: https://github.com/GirishPMallya/hello-world.git and branch: trial_branch
+D, [2019-08-01T12:33:42.739057 #6685] DEBUG -- : <MyGit> : <GitExist?> : Checking if the user has git installed
+D, [2019-08-01T12:33:42.739858 #6685] DEBUG -- : <MyGit> : <GitExist?> : Git exists
+D, [2019-08-01T12:33:42.739905 #6685] DEBUG -- : <MyGit> <mygit_create> : Checking for git exists : true
+D, [2019-08-01T12:33:42.739927 #6685] DEBUG -- : <MyGit> : <GitExist?> : Checking if the user has git installed
+D, [2019-08-01T12:33:42.740545 #6685] DEBUG -- : <MyGit> : <GitExist?> : Git exists
+D, [2019-08-01T12:33:42.740590 #6685] DEBUG -- : <MyGit> <mygit_create> : Starting to clone the repo https://github.com/GirishPMallya/hello-world.git
+D, [2019-08-01T12:33:53.097699 #6685] DEBUG -- : <MyGit> <mygit_create> : Successfully cloned https://github.com/GirishPMallya/hello-world.git
+D, [2019-08-01T12:33:53.097793 #6685] DEBUG -- : <MyGit> <getlastmodified> : getting the last modified file
+D, [2019-08-01T12:33:53.100487 #6685] DEBUG -- : <MyGit> <mygit_create> : last modified directory : hello-world
+D, [2019-08-01T12:33:53.122988 #6685] DEBUG -- : <MyGit> <mygit_create> : Created the Hidden Directory to store data
+D, [2019-08-01T12:33:59.452357 #6685] DEBUG -- : <MyGit> <writetofile> : Successfully wrote trial_branch to Direx.txt
+D, [2019-08-01T12:33:59.452429 #6685] DEBUG -- : <MyGit> <mygit_create> : Writing GirishPMallya/hello-world to the files
+D, [2019-08-01T12:33:59.452555 #6685] DEBUG -- : <MyGit> <writetofile> : Successfully wrote GirishPMallya/hello-world to /home/girish/bin/repo.txt
+D, [2019-08-01T12:33:59.452665 #6685] DEBUG -- : <MyGit> <writetofile> : Successfully wrote GirishPMallya/hello-world to repo.txt
+D, [2019-08-01T12:33:59.452748 #6685] DEBUG -- : <MyGit> <mygit_create> : Successfully executed the create command!
+D, [2019-08-01T12:35:50.884241 #6754] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:35:50.884472 #6754] DEBUG -- : <MyGit> <writetofile> : Successfully wrote master to Base.txt
+D, [2019-08-01T12:35:50.884540 #6754] DEBUG -- : <MyGit> <mygit_prepare> : Calling rebase
+D, [2019-08-01T12:35:51.030735 #6754] DEBUG -- : <MyGit> <mygit_prepare> : Rebase ended
+D, [2019-08-01T12:35:51.030892 #6754] DEBUG -- : Read data trial_branch from Direx.txt
+D, [2019-08-01T12:36:11.796885 #6754] DEBUG -- : <MyGit> <mygit_prepare> : git pushed trial_branch
+D, [2019-08-01T12:36:58.342924 #6821] DEBUG -- : Request Called
+D, [2019-08-01T12:37:47.233731 #6840] DEBUG -- : Request Called
+D, [2019-08-01T12:37:47.233792 #6840] DEBUG -- : <MyGit> : <GitExist?> : Checking if the user has git installed
+D, [2019-08-01T12:37:47.234575 #6840] DEBUG -- : <MyGit> : <GitExist?> : Git exists
+D, [2019-08-01T12:37:47.234620 #6840] DEBUG -- : <MYGIT> <mygit_request>module : Check if git exists? : true
+D, [2019-08-01T12:37:47.234661 #6840] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:37:47.234744 #6840] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T12:37:47.234823 #6840] DEBUG -- : Read data trial_branch from Direx.txt
+D, [2019-08-01T12:37:47.234850 #6840] DEBUG -- : <MyGit> <mygit_request> : Initializing the octokit client
+D, [2019-08-01T12:37:47.234877 #6840] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T12:37:47.234900 #6840] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T12:37:47.234916 #6840] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:37:47.234950 #6840] DEBUG -- : <MyGit> <readhidden> : gitconfig.txt doesn't exist
+D, [2019-08-01T12:38:39.314217 #6860] DEBUG -- : Request Called
+D, [2019-08-01T12:38:39.314286 #6860] DEBUG -- : <MyGit> : <GitExist?> : Checking if the user has git installed
+D, [2019-08-01T12:38:39.315204 #6860] DEBUG -- : <MyGit> : <GitExist?> : Git exists
+D, [2019-08-01T12:38:39.315260 #6860] DEBUG -- : <MYGIT> <mygit_request>module : Check if git exists? : true
+D, [2019-08-01T12:38:39.315335 #6860] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:38:39.315390 #6860] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T12:38:39.315422 #6860] DEBUG -- : Read data trial_branch from Direx.txt
+D, [2019-08-01T12:38:39.315442 #6860] DEBUG -- : <MyGit> <mygit_request> : Initializing the octokit client
+D, [2019-08-01T12:38:39.315460 #6860] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T12:38:39.315477 #6860] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T12:38:39.315494 #6860] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:38:39.315630 #6860] DEBUG -- : <MyGit> <readhidden> : gitconfig.txt doesn't exist
+D, [2019-08-01T12:38:49.670072 #6865] DEBUG -- : <MyGit> : Checking if Config Exists
+D, [2019-08-01T12:38:49.670137 #6865] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:38:49.670183 #6865] DEBUG -- : <MyGit> : <ConfigExist?> : Calling the ConfigGit function to configure the user's git
+D, [2019-08-01T12:38:49.670208 #6865] DEBUG -- : <MyGit> <ConfigGit> : Asking for the user`s git credentials through console
+D, [2019-08-01T12:39:03.231655 #6865] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:39:03.231988 #6865] DEBUG -- : <MyGit> <ConfigGit> : Writing to gitconfig file
+D, [2019-08-01T12:39:03.232302 #6865] DEBUG -- : <MyGit> <writetofile> : Successfully wrote GirishPMallya
+testapipwtesttest to gitconfig.txt
+D, [2019-08-01T12:39:03.232414 #6865] DEBUG -- : <MyGit> <ConfigGit> : Git credentials have been configured
+D, [2019-08-01T12:39:06.435072 #6872] DEBUG -- : Request Called
+D, [2019-08-01T12:39:06.435141 #6872] DEBUG -- : <MyGit> : <GitExist?> : Checking if the user has git installed
+D, [2019-08-01T12:39:06.435970 #6872] DEBUG -- : <MyGit> : <GitExist?> : Git exists
+D, [2019-08-01T12:39:06.436029 #6872] DEBUG -- : <MYGIT> <mygit_request>module : Check if git exists? : true
+D, [2019-08-01T12:39:06.436099 #6872] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:39:06.436286 #6872] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T12:39:06.436351 #6872] DEBUG -- : Read data trial_branch from Direx.txt
+D, [2019-08-01T12:39:06.436375 #6872] DEBUG -- : <MyGit> <mygit_request> : Initializing the octokit client
+D, [2019-08-01T12:39:06.436394 #6872] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T12:39:06.436411 #6872] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T12:39:06.436427 #6872] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:39:06.436463 #6872] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T12:39:06.436532 #6872] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T12:39:06.436553 #6872] DEBUG -- : <MyGit> <mygit_request> : Successfully initialized the octokit client
+D, [2019-08-01T12:39:06.436571 #6872] DEBUG -- : <MyGit> <mygit_request> : Now creating a pull_request for GirishPMallya/hello-world from trial_branch to master
+D, [2019-08-01T12:40:17.312080 #6947] DEBUG -- : Request Called
+D, [2019-08-01T12:40:17.312144 #6947] DEBUG -- : <MyGit> : <GitExist?> : Checking if the user has git installed
+D, [2019-08-01T12:40:17.313001 #6947] DEBUG -- : <MyGit> : <GitExist?> : Git exists
+D, [2019-08-01T12:40:17.313048 #6947] DEBUG -- : <MYGIT> <mygit_request>module : Check if git exists? : true
+D, [2019-08-01T12:40:17.313091 #6947] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:40:17.313143 #6947] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T12:40:17.313179 #6947] DEBUG -- : Read data trial_branch from Direx.txt
+D, [2019-08-01T12:40:17.313211 #6947] DEBUG -- : <MyGit> <mygit_request> : Initializing the octokit client
+D, [2019-08-01T12:40:17.313232 #6947] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T12:40:17.313250 #6947] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T12:40:17.313266 #6947] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:40:17.313300 #6947] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T12:40:17.313369 #6947] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T12:40:17.313389 #6947] DEBUG -- : <MyGit> <mygit_request> : Successfully initialized the octokit client
+D, [2019-08-01T12:40:17.313407 #6947] DEBUG -- : <MyGit> <mygit_request> : Now creating a pull_request for GirishPMallya/hello-world from trial_branch to master
+D, [2019-08-01T12:41:34.191080 #7059] DEBUG -- : Request Called
+D, [2019-08-01T12:41:34.191144 #7059] DEBUG -- : <MyGit> : <GitExist?> : Checking if the user has git installed
+D, [2019-08-01T12:41:34.192216 #7059] DEBUG -- : <MyGit> : <GitExist?> : Git exists
+D, [2019-08-01T12:41:34.192264 #7059] DEBUG -- : <MYGIT> <mygit_request>module : Check if git exists? : true
+D, [2019-08-01T12:41:34.192321 #7059] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:41:34.192386 #7059] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T12:41:34.192422 #7059] DEBUG -- : Read data trial_branch from Direx.txt
+D, [2019-08-01T12:41:34.192449 #7059] DEBUG -- : <MyGit> <mygit_request> : Initializing the octokit client
+D, [2019-08-01T12:41:34.192471 #7059] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T12:41:34.192488 #7059] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T12:41:34.192505 #7059] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:41:34.192551 #7059] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T12:41:34.192620 #7059] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T12:41:34.192640 #7059] DEBUG -- : <MyGit> <mygit_request> : Successfully initialized the octokit client
+D, [2019-08-01T12:41:34.192659 #7059] DEBUG -- : <MyGit> <mygit_request> : Now creating a pull_request for GirishPMallya/hello-world from trial_branch to master
+D, [2019-08-01T12:41:41.570543 #7059] DEBUG -- : <MyGit> <mygit_request> : Successfully created the pull requested with pull request number 57
+D, [2019-08-01T12:41:43.623310 #7059] DEBUG -- : <MyGit> <mygit_request> : requesting a review
+D, [2019-08-01T12:41:43.623408 #7059] DEBUG -- : <MyGit> <mygit_request> : requested review by girishmallya123
+D, [2019-08-01T12:41:43.623443 #7059] DEBUG -- : <MyGit> <mygit_request> : Requesting a comparison between master and trial_branch
+D, [2019-08-01T12:41:44.987878 #7059] DEBUG -- : <MyGit> <mygit_request> : Successfully requested the comparison
+D, [2019-08-01T12:41:44.987951 #7059] DEBUG -- : <MyGit> <mygit_request> : creating a JSON object for the return value of comparison
+D, [2019-08-01T12:41:44.988182 #7059] DEBUG -- : <MyGit> <mygit_request> : Saved the json object on disk
+D, [2019-08-01T12:41:44.988252 #7059] DEBUG -- : <MyGit> <writetofile> : Successfully wrote 57 to pullreq.txt
+D, [2019-08-01T12:41:44.988313 #7059] DEBUG -- : <MyGit> <writetofile> : Successfully wrote 303249105 to reviewreq.txt
+D, [2019-08-01T12:41:44.988344 #7059] DEBUG -- : <MyGit> <mygit_status> Writing Pull number and review ID to files successfully
+D, [2019-08-01T12:41:58.578684 #7067] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T12:41:58.578748 #7067] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T12:41:58.578773 #7067] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T12:41:58.578795 #7067] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T12:41:58.578823 #7067] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:41:58.578903 #7067] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T12:41:58.578989 #7067] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T12:41:58.579020 #7067] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T12:41:58.579043 #7067] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:42:10.914162 #7074] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T12:42:10.914226 #7074] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T12:42:10.914251 #7074] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T12:42:10.914277 #7074] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T12:42:10.914296 #7074] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:42:10.914345 #7074] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T12:42:10.914417 #7074] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T12:42:10.914448 #7074] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T12:42:10.914476 #7074] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:43:29.264666 #7164] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T12:43:29.264740 #7164] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T12:43:29.264785 #7164] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T12:43:29.264821 #7164] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T12:43:29.264877 #7164] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:43:29.265085 #7164] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T12:43:29.265153 #7164] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T12:43:29.265174 #7164] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T12:43:29.265192 #7164] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:44:02.561598 #7218] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T12:44:02.561669 #7218] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T12:44:02.561712 #7218] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T12:44:02.561747 #7218] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T12:44:02.561810 #7218] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:44:02.561993 #7218] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T12:44:02.562094 #7218] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T12:44:02.562117 #7218] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T12:44:02.562135 #7218] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:46:00.214330 #7340] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T12:46:00.214404 #7340] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T12:46:00.214448 #7340] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T12:46:00.214485 #7340] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T12:46:00.214545 #7340] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:46:00.214711 #7340] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T12:46:00.214784 #7340] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T12:46:00.214815 #7340] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T12:46:00.214833 #7340] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:46:00.215600 #7340] DEBUG -- : <MyGit> <mygit_status> : Requested the Repo Name
+D, [2019-08-01T12:47:12.478224 #7370] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T12:47:12.478346 #7370] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T12:47:12.478391 #7370] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T12:47:12.478454 #7370] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T12:47:12.478507 #7370] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:47:12.478621 #7370] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T12:47:12.478785 #7370] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T12:47:12.478813 #7370] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T12:47:12.478846 #7370] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:47:12.479633 #7370] DEBUG -- : <MyGit> <mygit_status> : Requested the Repo Name
+D, [2019-08-01T12:47:43.923685 #7383] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T12:47:43.923747 #7383] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T12:47:43.923772 #7383] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T12:47:43.923799 #7383] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T12:47:43.923822 #7383] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:47:43.923876 #7383] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T12:47:43.923947 #7383] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T12:47:43.924634 #7383] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T12:47:43.924695 #7383] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:47:43.925242 #7383] DEBUG -- : <MyGit> <mygit_status> : Requested the Repo Name
+D, [2019-08-01T12:48:13.802906 #7398] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T12:48:13.802978 #7398] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T12:48:13.803034 #7398] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T12:48:13.803099 #7398] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T12:48:13.803180 #7398] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:48:13.803365 #7398] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T12:48:13.803450 #7398] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T12:48:13.804305 #7398] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T12:48:13.804388 #7398] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T12:48:13.805010 #7398] DEBUG -- : <MyGit> <mygit_status> : Requested the Repo Name
+D, [2019-08-01T12:48:13.805070 #7398] DEBUG -- : <MyGit> <mygit_status> : Reading hidden files to get pull request number, review request id and base branch
+D, [2019-08-01T12:48:13.805115 #7398] DEBUG -- : Read data 57 from pullreq.txt
+D, [2019-08-01T12:48:13.805151 #7398] DEBUG -- : Read data 303249105 from reviewreq.txt
+D, [2019-08-01T12:48:13.805184 #7398] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T12:48:20.411130 #7398] DEBUG -- : <MyGit> <mygit_status> : Requesting the status of the review
+D, [2019-08-01T12:48:20.411245 #7398] DEBUG -- : <MyGit> <mygit_status> : Review not done yet
+D, [2019-08-01T14:19:43.900172 #9068] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T14:19:43.900229 #9068] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T14:19:43.900253 #9068] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T14:19:43.900271 #9068] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T14:19:43.900288 #9068] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T14:19:43.900335 #9068] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T14:19:43.900400 #9068] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T14:19:43.900421 #9068] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T14:19:43.900438 #9068] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T14:19:43.900463 #9068] DEBUG -- : <MyGit> <mygit_status> : Requested the Repo Name
+D, [2019-08-01T14:19:43.900489 #9068] DEBUG -- : <MyGit> <mygit_status> : Reading hidden files to get pull request number, review request id and base branch
+D, [2019-08-01T14:19:43.900518 #9068] DEBUG -- : Read data 57 from pullreq.txt
+D, [2019-08-01T14:19:43.900546 #9068] DEBUG -- : Read data 303249105 from reviewreq.txt
+D, [2019-08-01T14:19:43.900573 #9068] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T14:19:50.323451 #9068] DEBUG -- : <MyGit> <mygit_status> : Requesting the status of the review
+D, [2019-08-01T14:19:50.323812 #9068] DEBUG -- : <MyGit> <mygit_status> : Review not done yet
+D, [2019-08-01T14:45:30.364929 #10391] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T14:45:30.364984 #10391] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T14:46:01.283703 #10420] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T14:46:01.283757 #10420] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T14:46:01.283780 #10420] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T14:51:44.112465 #10565] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T14:51:44.112520 #10565] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T14:51:44.112543 #10565] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T14:51:44.112561 #10565] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T14:51:44.112579 #10565] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T14:51:44.112625 #10565] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T14:51:44.112687 #10565] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T14:51:44.112708 #10565] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T14:51:44.112726 #10565] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T14:51:44.112751 #10565] DEBUG -- : <MyGit> <mygit_status> : Requested the Repo Name
+D, [2019-08-01T14:51:44.112778 #10565] DEBUG -- : <MyGit> <mygit_status> : Reading hidden files to get pull request number, review request id and base branch
+D, [2019-08-01T14:51:44.112808 #10565] DEBUG -- : Read data 57 from pullreq.txt
+D, [2019-08-01T14:51:44.112837 #10565] DEBUG -- : Read data 303249105 from reviewreq.txt
+D, [2019-08-01T14:51:44.112865 #10565] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T14:51:50.723888 #10565] DEBUG -- : <MyGit> <mygit_status> : Requesting the status of the review
+D, [2019-08-01T14:51:50.723991 #10565] DEBUG -- : <MyGit> <mygit_status> : Review not done yet
+D, [2019-08-01T14:56:46.842984 #10693] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T14:56:46.843050 #10693] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T14:56:46.843072 #10693] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T14:56:46.843097 #10693] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T14:56:46.843115 #10693] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T14:56:46.843159 #10693] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T14:56:46.843220 #10693] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T14:56:46.843240 #10693] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T14:56:46.843256 #10693] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T14:56:46.843281 #10693] DEBUG -- : <MyGit> <mygit_status> : Requested the Repo Name
+D, [2019-08-01T14:56:46.843307 #10693] DEBUG -- : <MyGit> <mygit_status> : Reading hidden files to get pull request number, review request id and base branch
+D, [2019-08-01T14:56:46.843336 #10693] DEBUG -- : Read data 57 from pullreq.txt
+D, [2019-08-01T14:56:46.843363 #10693] DEBUG -- : Read data 303249105 from reviewreq.txt
+D, [2019-08-01T14:56:46.843390 #10693] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T14:56:53.305637 #10693] DEBUG -- : <MyGit> <mygit_status> : Requesting the status of the review
+D, [2019-08-01T14:56:53.305744 #10693] DEBUG -- : <MyGit> <mygit_status> : Review not done yet
+D, [2019-08-01T15:35:37.524918 #11531] DEBUG -- : <MyGit> : Checking if Config Exists
+D, [2019-08-01T15:35:37.524972 #11531] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T15:35:37.525014 #11531] DEBUG -- : <MyGit> : <ConfigExist?> : The config file exists
+D, [2019-08-01T15:35:37.525037 #11531] DEBUG -- : <MyGit> : <ConfigExist?> : Forcefully creating a new config
+D, [2019-08-01T15:35:37.525055 #11531] DEBUG -- : <MyGit> <ConfigGit> : Asking for the user`s git credentials through console
+D, [2019-08-01T15:35:48.012224 #11531] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T15:35:48.012491 #11531] DEBUG -- : <MyGit> <ConfigGit> : Writing to gitconfig file
+D, [2019-08-01T15:35:48.012834 #11531] DEBUG -- : <MyGit> <writetofile> : Successfully wrote GirishPMallya
+testapipwtesttest to gitconfig.txt
+D, [2019-08-01T15:35:48.012935 #11531] DEBUG -- : <MyGit> <ConfigGit> : Git credentials have been configured
+D, [2019-08-01T15:40:11.974929 #11815] DEBUG -- : <MyGit> : Checking if Config Exists
+D, [2019-08-01T15:40:11.974982 #11815] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T15:40:11.975026 #11815] DEBUG -- : <MyGit> : <ConfigExist?> : The config file exists
+D, [2019-08-01T15:40:11.975050 #11815] DEBUG -- : <MyGit> : <ConfigExist?> : Forcefully creating a new config
+D, [2019-08-01T15:40:11.975069 #11815] DEBUG -- : <MyGit> <ConfigGit> : Asking for the user`s git credentials through console
+D, [2019-08-01T15:40:22.864474 #11815] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T15:40:22.864745 #11815] DEBUG -- : <MyGit> <ConfigGit> : Writing to gitconfig file
+D, [2019-08-01T15:40:22.865095 #11815] DEBUG -- : <MyGit> <writetofile> : Successfully wrote GirishPMallya
+testapipwtesttest to gitconfig.txt
+D, [2019-08-01T15:40:22.865198 #11815] DEBUG -- : <MyGit> <ConfigGit> : Git credentials have been configured
+D, [2019-08-01T15:40:40.074840 #11824] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T15:40:40.074897 #11824] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T15:40:40.074920 #11824] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T15:40:40.074939 #11824] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T15:40:40.074957 #11824] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T15:40:40.075008 #11824] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T15:40:40.075072 #11824] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T15:40:40.075099 #11824] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T15:40:40.075117 #11824] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T15:40:40.075142 #11824] DEBUG -- : <MyGit> <mygit_status> : Requested the Repo Name
+D, [2019-08-01T15:40:40.075167 #11824] DEBUG -- : <MyGit> <mygit_status> : Reading hidden files to get pull request number, review request id and base branch
+D, [2019-08-01T15:40:40.075195 #11824] DEBUG -- : Read data 57 from pullreq.txt
+D, [2019-08-01T15:40:40.075223 #11824] DEBUG -- : Read data 303249105 from reviewreq.txt
+D, [2019-08-01T15:40:40.075250 #11824] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T15:40:46.712679 #11824] DEBUG -- : <MyGit> <mygit_status> : Requesting the status of the review
+D, [2019-08-01T15:40:46.712815 #11824] DEBUG -- : <MyGit> <mygit_status> : Review not done yet
+D, [2019-08-01T15:41:00.168546 #11840] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T15:41:00.168599 #11840] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T15:41:00.168622 #11840] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T15:41:00.168640 #11840] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T15:41:00.168658 #11840] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T15:41:00.168705 #11840] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T15:41:00.168771 #11840] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T15:41:00.168792 #11840] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T15:41:00.168809 #11840] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T15:41:00.168834 #11840] DEBUG -- : <MyGit> <mygit_status> : Requested the Repo Name
+D, [2019-08-01T15:41:00.168861 #11840] DEBUG -- : <MyGit> <mygit_status> : Reading hidden files to get pull request number, review request id and base branch
+D, [2019-08-01T15:41:00.168890 #11840] DEBUG -- : Read data 57 from pullreq.txt
+D, [2019-08-01T15:41:00.168918 #11840] DEBUG -- : Read data 303249105 from reviewreq.txt
+D, [2019-08-01T15:41:00.168946 #11840] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T15:41:06.592581 #11840] DEBUG -- : <MyGit> <mygit_status> : Requesting the status of the review
+D, [2019-08-01T15:41:06.592711 #11840] DEBUG -- : <MyGit> <mygit_status> : Review not done yet
+D, [2019-08-01T15:42:22.344515 #11925] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T15:42:22.344575 #11925] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T15:42:22.344599 #11925] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T15:42:22.344618 #11925] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T15:42:22.344635 #11925] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T15:42:22.344681 #11925] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T15:42:22.344748 #11925] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T15:42:22.344768 #11925] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T15:42:22.344786 #11925] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T15:42:22.344811 #11925] DEBUG -- : <MyGit> <mygit_status> : Requested the Repo Name
+D, [2019-08-01T15:42:22.344837 #11925] DEBUG -- : <MyGit> <mygit_status> : Reading hidden files to get pull request number, review request id and base branch
+D, [2019-08-01T15:42:22.344867 #11925] DEBUG -- : Read data 57 from pullreq.txt
+D, [2019-08-01T15:42:22.344895 #11925] DEBUG -- : Read data 303249105 from reviewreq.txt
+D, [2019-08-01T15:42:22.344924 #11925] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T15:42:23.764965 #11925] DEBUG -- : <MyGit> <mygit_status> : Requesting the status of the review
+D, [2019-08-01T15:42:23.765063 #11925] DEBUG -- : <MyGit> <mygit_status> : Review not done yet
+D, [2019-08-01T15:47:48.608679 #12104] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T15:47:48.608800 #12104] DEBUG -- : <MyGit> <writetofile> : Successfully wrote /home/girish/RoR/ to log.txt
+D, [2019-08-01T16:01:35.344881 #12655] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T16:01:35.344937 #12655] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T16:01:35.344960 #12655] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T16:01:35.344979 #12655] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T16:01:35.344996 #12655] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T16:01:35.345042 #12655] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T16:01:35.345107 #12655] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T16:01:35.345128 #12655] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T16:01:35.345145 #12655] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T16:01:35.345171 #12655] DEBUG -- : <MyGit> <mygit_status> : Requested the Repo Name
+D, [2019-08-01T16:01:35.345197 #12655] DEBUG -- : <MyGit> <mygit_status> : Reading hidden files to get pull request number, review request id and base branch
+D, [2019-08-01T16:01:35.345227 #12655] DEBUG -- : Read data 57 from pullreq.txt
+D, [2019-08-01T16:01:35.345255 #12655] DEBUG -- : Read data 303249105 from reviewreq.txt
+D, [2019-08-01T16:01:35.345284 #12655] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T16:01:41.765126 #12655] DEBUG -- : <MyGit> <mygit_status> : Requesting the status of the review
+D, [2019-08-01T16:01:41.765212 #12655] DEBUG -- : <MyGit> <mygit_status> : Review not done yet
+D, [2019-08-01T16:06:03.412659 #12742] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T16:06:03.412715 #12742] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T16:06:03.412739 #12742] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T16:06:03.412757 #12742] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T16:06:03.412775 #12742] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T16:06:03.412820 #12742] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T16:06:03.412883 #12742] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T16:06:03.412904 #12742] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T16:06:03.412921 #12742] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T16:06:03.412946 #12742] DEBUG -- : <MyGit> <mygit_status> : Requested the Repo Name
+D, [2019-08-01T16:06:03.412971 #12742] DEBUG -- : <MyGit> <mygit_status> : Reading hidden files to get pull request number, review request id and base branch
+D, [2019-08-01T16:06:03.413000 #12742] DEBUG -- : Read data 57 from pullreq.txt
+D, [2019-08-01T16:06:03.413027 #12742] DEBUG -- : Read data 303249105 from reviewreq.txt
+D, [2019-08-01T16:06:03.413055 #12742] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T16:06:09.951047 #12742] DEBUG -- : <MyGit> <mygit_status> : Requesting the status of the review
+D, [2019-08-01T16:06:09.951174 #12742] DEBUG -- : <MyGit> <mygit_status> : Review not done yet
+D, [2019-08-01T16:10:44.314402 #12808] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T16:10:44.314455 #12808] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T16:10:44.314491 #12808] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T16:10:44.314516 #12808] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T16:10:44.314534 #12808] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T16:10:44.314578 #12808] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T16:10:44.314641 #12808] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T16:10:44.314661 #12808] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T16:10:44.314677 #12808] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T16:10:44.314701 #12808] DEBUG -- : <MyGit> <mygit_status> : Requested the Repo Name
+D, [2019-08-01T16:10:44.314726 #12808] DEBUG -- : <MyGit> <mygit_status> : Reading hidden files to get pull request number, review request id and base branch
+D, [2019-08-01T16:10:44.314753 #12808] DEBUG -- : Read data 57 from pullreq.txt
+D, [2019-08-01T16:10:44.314781 #12808] DEBUG -- : Read data 303249105 from reviewreq.txt
+D, [2019-08-01T16:10:44.314808 #12808] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T16:10:51.281839 #12808] DEBUG -- : <MyGit> <mygit_status> : Requesting the status of the review
+D, [2019-08-01T16:10:51.281932 #12808] DEBUG -- : <MyGit> <mygit_status> : Review not done yet
+D, [2019-08-01T16:11:30.669541 #12832] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T16:11:30.669738 #12832] DEBUG -- : <MyGit> <writetofile> : Successfully wrote /home/girish/RoR/log_file.log to log.txt
+D, [2019-08-01T16:12:46.397545 #12864] DEBUG -- : <MyGit> <mygit_status> : Entered the mygit_status module
+D, [2019-08-01T16:12:46.397601 #12864] DEBUG -- : <MyGit> <mygit_status> : Initializing the octokit API
+D, [2019-08-01T16:12:46.397624 #12864] DEBUG -- : <MyGit> <octoKitInit>  : Initializing Octokit API for git
+D, [2019-08-01T16:12:46.397643 #12864] DEBUG -- : <MyGit> <ReturnGitCredentials> : Checking if credentials are stored
+D, [2019-08-01T16:12:46.397661 #12864] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T16:12:46.397705 #12864] DEBUG -- : Read data GirishPMallya
+testapipwtesttest from gitconfig.txt
+D, [2019-08-01T16:12:46.397771 #12864] DEBUG -- : <MyGit> <octoKitInit> : Successfully logged into Octokit
+D, [2019-08-01T16:12:46.397792 #12864] DEBUG -- : <MyGit> <mygit_status> : Successfully initialized the octokit API
+D, [2019-08-01T16:12:46.397810 #12864] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T16:12:46.397836 #12864] DEBUG -- : <MyGit> <mygit_status> : Requested the Repo Name
+D, [2019-08-01T16:12:46.397862 #12864] DEBUG -- : <MyGit> <mygit_status> : Reading hidden files to get pull request number, review request id and base branch
+D, [2019-08-01T16:12:46.397892 #12864] DEBUG -- : Read data 57 from pullreq.txt
+D, [2019-08-01T16:12:46.397921 #12864] DEBUG -- : Read data 303249105 from reviewreq.txt
+D, [2019-08-01T16:12:46.397949 #12864] DEBUG -- : Read data master from Base.txt
+D, [2019-08-01T16:12:52.703832 #12864] DEBUG -- : <MyGit> <mygit_status> : Requesting the status of the review
+D, [2019-08-01T16:12:52.703934 #12864] DEBUG -- : <MyGit> <mygit_status> : Review not done yet
+D, [2019-08-01T16:13:25.711493 #12905] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T16:13:25.711687 #12905] DEBUG -- : <MyGit> <writetofile> : Successfully wrote /home/girish/RoR/log_file.log to log.txt
+D, [2019-08-01T17:02:15.660618 #14510] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T17:02:15.660710 #14510] DEBUG -- : <MyGit> <mygit_create> : mygit_create called with repo: hello and branch: hello
+D, [2019-08-01T17:02:15.660745 #14510] DEBUG -- : <MyGit> <mygit_create> : Checking for git exists :
+D, [2019-08-01T17:02:15.660842 #14510] DEBUG -- : <MyGit> : <GitExist?> : Checking if the user has git installed
+D, [2019-08-01T17:02:15.661780 #14510] DEBUG -- : <MyGit> : <GitExist?> : Git isnt installed, requesting the user to install git
+D, [2019-08-01T17:02:15.661860 #14510] DEBUG -- : <MyGit> <mygit_create> : Exiting because git doesn`t exist
+D, [2019-08-01T17:02:39.295104 #14708] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T17:02:39.295286 #14708] DEBUG -- : <MyGit> <writetofile> : Successfully wrote /home/girish/RoR/log_file.log to log.txt
+D, [2019-08-01T17:03:58.307487 #14776] DEBUG -- : <MyGit> : <getreponame> : Asking for reponame
+D, [2019-08-01T17:03:58.307799 #14776] DEBUG -- : <MyGit> <writetofile> : Successfully wrote /home/girish/RoR/log_file.log to log.txt
