@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Git-Diff</title>
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a align="center"> Your Git Diff!</a>
+               
+            </nav>
+        </div>
+    </div>
+   
+
+
+<div class="stuff">
+
+<h2 align="center"> Your Files </h2>
+
+
+<% @processed_json.each do |k,v| %>
+<div class="w3-container">
+<% minihash = @processed_json[k] %>
+<% filelink = minihash['raw_url'] %>
+<% rawfile = open(filelink) %>
+<% patchf = minihash['patch'] %>
+<% linenum = 0 %>
+<% arraypatch= patchf.split("\n") %>
+
+  <div class="input">
+  <div class="w3-card-4" style="width:80%;">
+    <header class="w3-container w3-black">
+      <h1> <%= k %>  </h1>
+    </header>
+
+    <div class="w3-container w3-white">
+
+	<% arraypatch.each do |w| %> 
+
+	<% if w[0] == '+' %>
+	<p style="background-color: #99ff99"> <%= "#{linenum+=1}  : #{w}" %> <p>
+	<%else if w[0] == '-' %>
+	<p style="background-color: #ff9966"> <%= "#{linenum+=1}  : #{w}" %> <p>
+	<%else%>
+	<p> <%= "#{linenum+=1}  : #{w}" %> <p> 
+	<%end%>
+	<%end%>
+<% end %>
+
+	
+    </div>
+
+    <footer class="w3-container w3-black">
+      <h5> <%= k %> </h5>
+    </footer>
+	</div>
+	</ br>
+	</ br>
+  </div>
+</div>
+
+<%end%>
+
+
+<div>
+
+   
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2016 Your Company</div>        
+    </div>
+</body>
+</html>                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

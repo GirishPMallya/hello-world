@@ -1,0 +1,16 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<body>
+<div class="maintext">
+<h1> Upload the JSON file </h1>
+</div>
+</br>
+<div class="vertical-center">
+<%= form_tag '/showdiff', multipart: true do %>
+<div class="bot-margin">
+ <%= file_field_tag :file, :style => 'display:inline; margin-top:-10px; 	width: 300px;
+	margin: 0 auto;' %>
+</div>
+ <%= submit_tag 'Upload!', class: 'button' %>
+<% end %>
+</div>
+</body> 
